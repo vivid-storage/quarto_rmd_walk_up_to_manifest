@@ -1,0 +1,42 @@
+---
+title: "Sample Quarto Document"
+output:
+  quarto::pdf_document:
+    latex_engine: xelatex
+---
+
+## R Code Chunk
+
+```{r}
+# R code chunk
+# Generate some random data
+set.seed(123)
+x <- rnorm(100)
+y <- rnorm(100)
+
+# Scatter plot
+plot(x, y, main = "Scatter Plot", xlab = "X", ylab = "Y")
+```
+
+## Python Code Chunk
+
+```{python}
+# Python code chunk
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Generate some random data
+np.random.seed(123)
+x = np.random.randn(100)
+y = np.random.randn(100)
+
+# Scatter plot
+plt.scatter(x, y)
+plt.title("Scatter Plot")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.show()
+```
+
+This document contains both R and Python code chunks demonstrating basic data generation and plotting.
+
